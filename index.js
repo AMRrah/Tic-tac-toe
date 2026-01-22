@@ -14,14 +14,14 @@ const changeTurn = () => {
 const checkwin = () => {
   let boxtext = document.getElementsByClassName("boxtext");
   let wins = [
-    [0, 1, 2, -4, 5, 0],
-    [3, 4, 5, -4, 15, 0],
-    [6, 7, 8, -4, 25, 0],
-    [0, 3, 6, -13.5, 15, 90],
-    [1, 4, 7, -3.5, 15, 90],
-    [2, 5, 8, 6.5, 15, 90],
-    [0, 4, 8, -3, 15, 45],
-    [2, 4, 6, -4, 15, 135],
+    [0, 1, 2, -50, -4025, 0],
+    [3, 4, 5, -49, 15, 0],
+    [6, 7, 8, -49, 4121, 0],
+    [0, 3, 6, -83.5, -890, 90],
+    [1, 4, 7, -49.5, -890, 90],
+    [2, 5, 8, -16.5, -890, 90],
+    [0, 4, 8, -49, 51, 45],
+    [2, 4, 6, -51, 15, 135],
   ];
   wins.forEach((e) => {
     if (
@@ -38,8 +38,8 @@ const checkwin = () => {
         .getElementsByTagName("img")[0].style.width = "200px";
       document.querySelector(
         ".line"
-      ).style.transform = `translate(${e[3]}vw,${e[4]}vw) rotate(${e[5]}deg)`;
-      document.querySelector(".line").style.width = "37vw";
+      ).style.transform = `translate(${e[3]}%,${e[4]}%) rotate(${e[5]}deg)`;
+      document.querySelector(".line").style.width = "101%";
       gameover.play();
     }
   });
@@ -77,3 +77,4 @@ reset.addEventListener("click", () => {
     "0px";
   document.querySelector(".line").style.width = "0";
 });
+
