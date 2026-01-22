@@ -17,6 +17,7 @@ nav {
 }
 
 .gamecreater {
+  position: relative;
   display: flex;
   justify-content: center;
   margin-top: 100px;
@@ -219,6 +220,7 @@ body {
     margin-top: -3px;
   }
 }
+
 
 
 
