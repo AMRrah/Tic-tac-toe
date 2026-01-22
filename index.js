@@ -103,7 +103,7 @@ Array.from(boxes).forEach((element) => {
       boxtext.innerText = turn;
       turn = changeTurn();
       audioturn.play();
-      checkwin();
+      checkWin();
 
       if (!agameover) {
         document.getElementsByClassName("info")[0].innerText =
@@ -124,5 +124,6 @@ reset.addEventListener("click", () => {
     "0px";
   document.querySelector(".line").style.width = "0";
 });
+
 
 
