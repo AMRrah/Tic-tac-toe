@@ -67,30 +67,15 @@ nav {
   background-color: blanchedalmond;
 }
 .line {
-  background-color: black;
-  height: 3px;
+  
+  height: 4px;
   width: 0;
+  top: 50%;
+  left: 50%;
   transition: 1s width ease-in-out;
   position: absolute;
   background-color: blue;
-}
-@media screen and (max-width: 600px) {
-  .gamecreater {
-    flex-wrap: wrap;
-  }
-  .gameinfo h1 {
-    font-size: 2rem;
-  }
-  .gameinfo {
-    margin-top: 40px;
-  }
-  .creater {
-    grid-template-columns: repeat(3, 20vw);
-    grid-template-rows: repeat(3, 20vw);
-  }
-  .line {
-    height: 3px;
-  }
+  
 }
 #reset {
   margin: 0 20px;
@@ -109,3 +94,123 @@ nav {
 body {
   background-color: lightcoral;
 }
+@media (min-width: 993px) and (max-width: 1200px) {
+  .creater {
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+  }
+
+  .box {
+    font-size: 90px;
+  }
+.line {
+    height: 4px;
+  }
+
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 992px) {
+  nav {
+    font-size: 36px;
+    height: 60px;
+  }
+
+  .gamecreater {
+    margin-top: 60px;
+    gap: 20px;
+  }
+
+  .creater {
+    grid-template-columns: repeat(3, 18vw);
+    grid-template-rows: repeat(3, 18vw);
+  }
+
+  .box {
+    font-size: 10vw;
+  }
+
+  .gameinfo h1 {
+    font-size: 2.2rem;
+  }
+  .line {
+    height: 4px;
+    margin-top: 34px;
+  }
+
+}
+
+/* Mobile devices */
+@media (min-width: 300px) and (max-width: 600px) {
+  nav {
+    font-size: 24px;
+    height: 55px;
+  }
+
+  .gamecreater {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .creater {
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 25vw);
+  }
+
+  .box {
+    font-size: 12vw;
+  }
+
+  .gameinfo {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .gameinfo h1 {
+    font-size: 1.8rem;
+  }
+
+  #reset {
+    font-size: 22px;
+    padding: 6px 20px;
+  }
+ .line {
+    height: 4px;
+    width: 0; /* JS controls width */
+    margin-top: 0px;
+   
+
+  }
+  
+}
+
+
+@media screen and (max-width: 400px )   {
+  nav {
+    font-size: 18px;
+  }
+
+  .creater {
+    grid-template-columns: repeat(3, 28vw);
+    grid-template-rows: repeat(3, 28vw);
+  }
+
+  .box {
+    font-size: 14vw;
+  }
+
+  .gameinfo h1 {
+    font-size: 1.5rem;
+  }
+
+  #reset {
+    font-size: 18px;
+  }
+  .line {
+    height: 3px;
+    width: 0;
+    margin-top: -3px;
+  }
+}
+
