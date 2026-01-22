@@ -67,13 +67,21 @@ nav {
   background-color: blanchedalmond;
 }
 .line {
-  height: 4px;
+  /* height: 4px;
   width: 0;
   top: 50%;
   left: 50%;
   transition: 1s width ease-in-out;
   position: absolute;
+  background-color: blue; */
+ position: absolute;
+  height: 4px;
   background-color: blue;
+  width: 0;
+  transform-origin: left center;
+  transition: width 0.3s ease;
+  z-index: 10;
+  
 }
 #reset {
   margin: 0 20px;
@@ -211,5 +219,6 @@ body {
     margin-top: -3px;
   }
 }
+
 
 
